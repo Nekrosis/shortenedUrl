@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Shorting URL</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body th:align="center">
+<h1>Add your Long URL</h1>
+<form action="#" th:action="@{/}" th:object="${url}" method="post">
+    <input th:type="hidden" th:field="*{id}"/>
+    <h3>URL: <input th:type="text" th:field="*{longUrl}" th:size="70"/></h3>
+    <p><input type="submit" value="Generate"/>
+</form>
+</body>
+</html>
