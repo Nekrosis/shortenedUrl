@@ -3,9 +3,6 @@
 
 ![shortered](https://user-images.githubusercontent.com/22380952/217095606-24fe585b-f005-4295-830a-c684c5533ca2.gif)
 
-
-URL-адрес ссылки - это URL-адрес ссылки, отображаемый в github после загрузки изображения в формате gif.
-
 1. Open your browser and follow the link http://localhost:8080
 
 <img width="596" alt="page 1" src="https://user-images.githubusercontent.com/22380952/217097691-fbcd754d-338b-436b-9f15-eea8e71c78c1.png">
