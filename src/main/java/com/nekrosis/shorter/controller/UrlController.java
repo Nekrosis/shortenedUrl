@@ -1,5 +1,6 @@
 package com.nekrosis.shorter.controller;
 
+
 import com.nekrosis.shorter.model.Url;
 import com.nekrosis.shorter.service.UrlService;
 import lombok.extern.slf4j.Slf4j;
@@ -13,9 +14,9 @@ import org.springframework.web.bind.annotation.*;
 public class UrlController {
     @Autowired
     UrlService service;
-    
+
     @GetMapping("/")
-    public String getLongUrl(@ModelAttribute("url")Url url) {
+    public String getLongUrl(@ModelAttribute("url") Url url) {
         return "index";
     }
 
