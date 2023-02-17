@@ -17,7 +17,6 @@ public class UrlService {
     @Autowired
     UrlRepository repository;
 
-    private final Url object = new Url();
 
     @Transactional
     public String getLongUrl(String id) {
@@ -26,12 +25,14 @@ public class UrlService {
 
     @Transactional
     public Url generatedShortUrl(String url) {
+
         if (!isValid(url)) {
             throw new RuntimeException("Url is not valid!");
         }
+        Url object = new Url();
         object.setLongUrl(url);
-        log.info(object.getLongUrl());
         object.setShortUrl(getShortUrl(url));
+        log.info(object.getLongUrl());
         log.info(object.getShortUrl());
         return repository.save(object);
     }
